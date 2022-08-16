@@ -57,13 +57,13 @@ function calculateInterest(uint basisPoints ,uint numDays, uint weiAmount) priva
 }
 
 function modifyLockPeriods(uint numDays, uint basisPoints) external {
-    require(owner == msg.sender, "Only Owner Can Modify");
+    require(owner == msg.sender, "Only Owner Can Modify Lock Periods");
 
     tiers[numDays] = basisPoints;
     lockPeriods.push(numDays);
 }
 
-function getBlockPeriods() external view returns(uint[] memory){
+function getLockPeriods() external view returns(uint[] memory){
     return lockPeriods;
 }
 
@@ -71,7 +71,7 @@ function getInterestRate(uint numDays) external view returns(uint){
     return tiers[numDays];
 }
 
-function getPostionById(uint positionId) external view returns(Position memory){
+function getPositionById(uint positionId) external view returns(Position memory){
     return positions[positionId];
 }
 
@@ -80,7 +80,7 @@ function getPositionIdsForAddress(address walletAddress) external view returns(u
 }
 
 function changeUnlockDate(uint positionId, uint newUnlockDate) external{
-    require(owner == msg.sender, "Only Owner Can Modify");
+    require(owner == msg.sender, "Only Owner Can Modify Staking Periods");
     positions[positionId].unlockDate = newUnlockDate;
 }
 
