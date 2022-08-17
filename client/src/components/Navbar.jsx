@@ -4,8 +4,7 @@ const NavBar = props => {
   return (
     <>
       <div className="navBar">
-        <div className="navButton">Markets</div>
-        <div className="navButton">Assets</div>
+        <div className="navButton"> Ethereum Staking Dapp</div>
         {props.isConnected() ? (
           <div className="connectButton">
             Connected

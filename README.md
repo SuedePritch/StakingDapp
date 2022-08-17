@@ -1,13 +1,26 @@
-# Sample Hardhat Project
+# Ethereum Staking dApp
+[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
+### Description
+This dApp allows users to stake ETH and earn interest. Users lock in for a specific timeframe and only recieve interest if withdrawn after unlock date has past
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+### Contributions
+[Issues and Pull requests can be made to this repo](https://github.com/SuedePritch/StakingDapp)
 
-Try running some of the following tasks:
+### Technology
+* Solidity
+* React
+* Ethers
+* Chai
+* Hardhat 
 
-```shell
-npx hardhat help
-npx hardhat test
-GAS_REPORT=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+
+![](Eth%20Staking%20Dapp.gif)
+
+
+
+### Testing
+run unit tests
+
+    npx hardhat test
+
+![](Tests.png)

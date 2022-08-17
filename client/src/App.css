@@ -1,5 +1,12 @@
+:root{
+  --clr-primary-100: hsl(178, 45%, 10%);
+  --clr-primary-300: hsl(178, 45%, 30%);
+  --clr-primary-500: hsl(178, 45%, 50%);
+  --clr-primary-1000: hsla(178, 45%, 100%, 0.95);
+}
+
 .App {
-  background-color: #fff;
+  background-color: var(--clr-primary-1000);
   text-align: center;
   min-height: 100vh; /* required for full page background */
 }
@@ -20,33 +27,33 @@
   display: inline-block;
   margin-left: 24px;
   padding: 5px;
-  color: #1168f1;
+  color: var(--clr-primary-500);
   font-size: 24px;
 }
 .connectButton {
   float: right;
   margin-right: 24px;
-  background-color: #1168f1;
+  background-color: var(--clr-primary-500);
   border-radius: 4px;
   padding: 5px 15px;
-  color: #f1f1f3;
+  color: var(--clr-primary-1000);
   font-size: 24px;
   cursor: pointer;
 }
 .connectButton:hover {
-  background-color: #f90;
+  background-color: var(--clr-primary-300);
 }
 .navBar {
   padding-top: 18px;
   overflow: hidden;
   padding-bottom: 10px;
-  border-bottom: 1px solid rgba(17, 104, 241, 0.08);
+  border-bottom: 1px solid var(--clr-primary-100);
 }
 
 /*////////////////////////////////////////////////////////////////////////////*/
 /* Market */
 .marketContainer {
-  background-color: #1168f1;
+  background-color: var(--clr-primary-500);
   width: 620px;
   height: 170px;
   margin: 0 auto;
@@ -63,17 +70,17 @@
 }
 .optionData {
   margin-left: 10px;
-  color: #fff;
+  color: var(--clr-primary-1000);
   font-weight: 700;
 }
 .optionPercent {
   display: block;
   font-size: 24px;
   font-weight: 1000;
-  color: #f90;
+  color: var(--clr-primary-300);
 }
 .logoImg {
-  background-color: #fff;
+  background-color: var(--clr-primary-1000);
   border-radius: 100px;
   margin-bottom: 14px;
   margin-right: 14px;
@@ -81,12 +88,12 @@
   height: 28px;
 }
 .marketHeader {
-  color: #fff;
+  color: var(--clr-primary-1000);
   font-size: 32px;
   font-weight: 800;
 }
 .hoverButton:hover {
-  background: #f90;
+  background: var(--clr-primary-300);
   cursor: pointer;
 }
 .hoverButton:active {
@@ -97,7 +104,7 @@
 /*////////////////////////////////////////////////////////////////////////////*/
 /* Assets */
 .assetContainer {
-  background-color: #1168f1;
+  background-color: var(--clr-primary-500);
   width: 620px;
   min-height: 225px;
   margin: 0 auto;
@@ -106,15 +113,15 @@
   padding: 6px;
   padding: 8px;
   margin-top: 50px; /* space between sections */
-  color: #fff;
+  color: var(--clr-primary-1000);
   font-weight: 500;
 }
 .columnHeaders {
   font-weight: 800;
-  color: #f90;
+  color: var(--clr-primary-300);
 }
 .stakedLogoImg {
-  background-color: #fff;
+  background-color: var(--clr-primary-1000);
   border-radius: 100px;
   margin-bottom: 14px;
   margin-right: 14px;
@@ -126,7 +133,7 @@
 /*////////////////////////////////////////////////////////////////////////////*/
 /* Glyphs */
 .glyphContainer {
-  background-color: #fff;
+  background-color: var(--clr-primary-1000);
   display: inline-block;
   width: 60px;
   height: 60px;
@@ -151,12 +158,15 @@
   color: rgb(86, 90, 105);
 }
 .modal-content {
-  background-color: #fff;
+  background-color: var(--clr-primary-1000);
   width: 300px !important;
-  padding: 0px 15px;
+  padding: 3rem;
   background-color: rgb(237, 238, 242) !important;
   border: 1px solid rgb(206, 208, 217) !important;
   border-radius: 12px !important;
+}
+.modal-content > *{
+  margin:1rem;
 }
 .fieldContainer {
   padding-left: 0px !important;
@@ -178,9 +188,9 @@
   height: 45px;
   line-height: 45px;
   font-size: 24px;
-  color: #fff;
+  color: var(--clr-primary-1000);
   border-radius: 20px;
-  background-color: #dd2f81;
+  background-color: var(--clr-primary-100);
   cursor: pointer
 }
 .orangeMiniButton {
@@ -190,12 +200,12 @@
   font-size: 12px;
   color: #000;
   border-radius: 20px;
-  background-color: #fff;
+  background-color: var(--clr-primary-1000);
   cursor: pointer
 }
 .orangeMiniButton:hover {
-  color: #fff;
-  background-color: #f90;;
+  color: var(--clr-primary-1000);
+  background-color: var(--clr-primary-300);;
 }
 .stakingTerms {
   color: blue;
