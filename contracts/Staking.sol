@@ -2,6 +2,10 @@
 pragma solidity ^ 0.8.0;
 
 contract Staking {
+    event Error(string);
+    fallback() external {
+        emit Error("call of a non-existent function");
+    }
     address public owner;
 
     struct Position{
